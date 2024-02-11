@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: Arial,sans-serif;
+
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainpage{
+    background-image: url(img/Back1.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+
+}
+#mainpage::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;  
+
+}
+#mainpage h1{
+    display: block;
+    width: fit-content;
+    font-size: 8rem;
+    position: relative;
+    color: white;     
+    
+}
+#mainpage p{
+    display: block;
+    width: fit-content;
+    font-size: 15px;
+    position: relative;
+    color: white;     
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    transition: width 0.3s ease;
+}
+.sidebar:hover {
+    width: 260px;
+}
+.sidebar .logo {
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+}
+.logo img {
+    width: 43px;
+    border-radius: 50%;
+}
+.logo h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-left: 15px;
+    display: none;
+}
+.sidebar:hover .logo h2 {
+    display: block;
+}
+.sidebar .links {
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: calc(100% - 140px);
+}
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+.links li:hover {
+    cursor: pointer;
+    background: #fff;
+}
+.links h4 {
+    color: #222;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+}
+.sidebar:hover .links h4 {
+    display: block;
+}
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+.sidebar:hover .links hr {
+    border-color: transparent;
+}
+.links li span {
+    padding: 12px 10px;
+}
+.links li a {
+    padding: 10px;
+    color: #000;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.sidebar:hover .links li a {
+    display: block;
+}
+.links .logout-link {
+    margin-top: 20px;
+}
+
+#Webproject{
+    width: 100%;
+    padding: 100px;
+    
+}
+.project h1{
+    display: block;
+    width: fit-content;
+    font-size: 50px;
+    position: relative;
+    color: black; 
+    padding-bottom: 30px;
+}
+.project p{
+    padding-bottom: 20px;
+    font-size: 18px;
+
+}
+.types{
+    display: flex;
+}
+.process-item{
+   
+    padding-left: 20px;
+    position: relative;
+
+}
+
+.things {
+        background-color: #312F36;
+        height: 600px;
+        
+    }
+
+
+.sec img{
+    width: 700px;
+    height: 400px;
+    margin-top: -350px;
+    
+}
+
+.research{
+    padding-left: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: transparent;
+    margin-right: 50px;
+    justify-content: center;
+    
+}
+.working{
+    display: flex;
+    padding: 100px;
+    margin-top: -325px;
+}
+.research h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+
+}
+.time{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size:11px;
+}
+hr{
+    border: 1px solid white;
+    margin-top: 5px;
+}
+.type{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.text h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 50px;
+}
+.dev img{
+    width: 80px;
+}
+.devlopment{
+    padding-left: 233px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: transparent;
+    margin-right: 50px;
+    justify-content: center;
+    margin-top: 125px;
+
+
+}
+.dev{
+    margin-right: 180px;
+}
+.dev h1{
+    color: white;
+    font-size: 20px;
+}
+.dev p{
+    color: #b7b7b7;
+
+}
+.inner{
+    background-color: #171D20;
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 240px;
+}
+.partners{
+    background-color:#171D20;
+    width: 100%;
+    height: 740px;
+
+}
+.employee{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    padding: 40px;
+    margin-left: 200px;
+    margin-right: 250px;
+    margin-top: -40px;
+    box-sizing: border-box;
+}
+.employee p{
+    font-size: 12px;
+}
+.review{
+    display: flex;
+}
+.jp img{
+    width: 30px;
+    border-radius: 100%;
+}
+.jp{
+    display: flex;
+    margin-top: 10px;
+}
+.quality{
+    width: 500px;
+    height: 200px;
+    margin-top: 30px;
+}
+.quality h1{
+    color: white;
+    font-size: 60px;
+}
+.team{
+    display: flex;
+    padding: 50px;
+    margin-left: 170px;
+    margin-top: 100px;
+}
+.team h1{
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+}
+.team p{
+    color: white;
+    width: 300px;
+    margin-left: 150px;
+    font-size: 15px;
+}
+.enginfo img{
+    width: 150px;
+    height: auto;
+    background-color: white;
+    position: relative;
+}
+.eng{
+    display: flex;
+    margin-left: 215px;
+}
+.enginfo{
+    padding: 15px;
+    margin-top: 50px;
+    
+}
+.ourclient{
+    background-color: white;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 80px;
+}
+.clients{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.heading h1{
+    font-size: 35px;
+    margin-top: 100px;
+    width: 200px;
+}
+.img-table {
+    width:1000px;
+
+}
+.img-table img {
+    width:30%;
+    height:auto;
+    display:inline;
+    margin: 10px 1.5%;
+}
+.end-page{
+    max-width: 100vw;
+    height: 400px;
+    background: url(img/dark2.jpg);
+    background-color: #ebfbff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20rem;
+    padding-left: 5rem;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact h1{
+    color: white;
+    font-size: 40px;
+    margin-top: -100px;
+}
+.social-media{
+    margin-top: -100px;
+    margin-right: 20px;
+}
+.copyright{
+    display: flex;
+
+}
+
